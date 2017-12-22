@@ -1,0 +1,7 @@
+<ul class="evc-card-info" [ngClass]="styleClass">
+    <li *ngFor="let subItem of data;let i = index" class="evc-card-info__item">
+      <a href="{{subItem.url}}" title="{{subItem.title}}" class="evc-card-info__link">
+        <span class="{{subItem.icon}}"></span>
+      </a>
+    </li>
+  </ul>

@@ -1,0 +1,19 @@
+<div class="evc-card-list">
+  <div class="evc-card-list__header">
+    <div class="evc-card-list__block">
+      <h1 class="evc-card-list__txt evc-card-list__txt--big evc-card-list__txt--bold">{{data.title}}</h1>
+    </div>
+    <div class="evc-card-list__block">
+      <span class="evc-card-list__txt evc-card-list__txt--to-right evc-card-list__txt--small">{{data.type}}</span>
+    </div>
+  </div>
+  <div class="evc-card-list__container">
+    <div class="evc-card-list__block evc-card-list__block--to-left">
+      <p class="evc-card-list__txt">{{data.client}}</p>
+      <span class="evc-card-list__txt evc-card-list__txt--bold">{{data.date}}</span>
+    </div>
+    <div class="evc-card-list__block evc-card-list__block--to-right">
+      <evc-group-modal [styleClass]="styleClass" [model]="data.dataModel" [maxItems]="4"></evc-group-modal>
+    </div>
+  </div>
+</div>

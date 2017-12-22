@@ -1,0 +1,15 @@
+
+.#{$wf__ns}card-info {
+	.evc-card-info{
+		&__item{
+			display:inline-block;
+			padding-right: rem(20);
+		}
+		&__link{
+			color:color(grey-2);
+			&:hover{
+				color:color(primary);
+			}
+		}
+	}
+}

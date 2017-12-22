@@ -1,0 +1,30 @@
+.#{$wf__ns}composed {
+	&__title{
+		font-size: 1.4rem;
+		margin-bottom: 20px;
+	}
+	.evc-composed{
+		&__list{
+			display: block;
+			width:100%;
+			padding-left: 10px;
+		}
+		&__link{
+			color:#4366a6;
+			font-size: 1rem;
+		}
+	}
+	.evc-card-info{
+		&__item{
+			display:inline-block;
+			padding-right:25px;
+			margin:5px;
+		}
+		&__link{
+			color:color(grey-2);
+			&:hover{
+				color:color(primary);
+			}
+		}
+	}
+}

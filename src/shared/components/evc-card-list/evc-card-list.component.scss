@@ -1,0 +1,24 @@
+.evc-card-list{
+	&__header{
+		display: block;
+		width:100%;
+		font-size: 0;
+	}
+	&__block{
+		width:50%;
+		display: inline-block;
+	}
+	&__txt{
+		font-size: 1rem;
+		&--bold{
+			font-weight: 600;
+		}
+		&--big{
+			font-size: 1.3rem;
+		}
+		&--to-right{
+			text-align: right;
+			display: block;
+		}
+	}
+}

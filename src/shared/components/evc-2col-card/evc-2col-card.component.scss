@@ -1,0 +1,58 @@
+.evc-card {
+	font-size: 0;
+	width:100%;
+	display:block;
+	margin-bottom: 10px;
+	&__block{
+		width:50%;
+		display:inline-block;
+		vertical-align: middle;
+		&--right{
+			text-align: right;
+		}
+		&--left{
+			text-align: left;
+		}
+	}
+	&__txt{
+		font-size: 1rem;
+		margin:0;
+		&--date{
+			font-weight: 600;
+			color: #ffffff;
+			height: 100%;
+			display: block;
+			padding-top: 5px;
+		}
+		&--bold{
+			font-weight: 600;
+		}
+		&--bigger{
+			font-size: 2rem;
+		}
+	}
+	&__icon{
+		font-size: 2rem;
+		margin-left: 5px;
+	}
+	&__side{
+		display:inline-block;
+		vertical-align: middle;
+	}
+	&__date{
+		padding:5px;
+		width:50px;
+		height: 50px;
+		text-align: center;
+		margin-right: 20px;
+	}
+	&__figure{
+		width:50px;
+		display: block;
+		margin-right: 20px;
+	}
+	&__image{
+		display: block;
+		width:100%;
+	}
+}

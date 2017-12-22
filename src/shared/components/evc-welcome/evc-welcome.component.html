@@ -1,0 +1,15 @@
+<div class="evc-welcome" [style.background-image]="'url(' + config.background + ')'">
+  <div class="evc-welcome__content-title">
+    <span class="evc-welcome__title" [innerHTML]="config.title"></span>
+  </div>
+  <div class="evc-welcome__info">
+    <div class="evc-welcome__localization">
+      <span class="evc-welcome__date" [innerHTML]="config.date"></span>
+      <span class="evc-welcome__city" [innerHTML]="config.city"></span>
+    </div>
+    <div class="evc-welcome__meteo">
+      <span class="evc-welcome__icon-weather" [ngClass]="config.iconWeather"></span>
+      <span class="evc-welcome__weather" [innerHTML]="config.weather"></span>
+    </div>
+  </div>
+</div>

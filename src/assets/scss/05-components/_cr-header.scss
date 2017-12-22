@@ -1,0 +1,28 @@
+///*----------------------------------------------
+//   # cr__header
+//------------------------------------------------*/
+
+.#{$wf__ns}header {
+	width: 100%;
+	min-height: rem(72);
+	margin: 0;
+	z-index: 999;
+	background-color: color(primary);
+	position: fixed;
+	padding-left: rem(10);
+	&__link{
+		display: inline-block;
+		padding: rem(15) rem(20) 0 0;
+		vertical-align: middle;
+		&:hover, &:active, &:visited, &:link {
+			text-decoration: none;
+		}
+	}
+	&__title {
+		display: inline-block;
+		vertical-align: middle;
+		font-size: rem(27);
+		color: color(white-1);
+		margin-left: rem(15);
+	}
+}

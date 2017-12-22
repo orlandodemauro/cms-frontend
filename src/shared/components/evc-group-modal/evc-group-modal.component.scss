@@ -1,0 +1,46 @@
+.evc-group-modal {
+    margin-left: 0;
+    font-size: 0;
+    &__item {
+        display: inline-block;
+        width: 27px;
+        height: 27px;
+        font-size: 1rem;
+        margin-right: 0.5rem;
+        vertical-align: middle;
+        &:last-child {
+            margin-right: 0;
+        }
+        &--max-items {
+            .evc-group-modal__link {
+                line-height: 27px;
+                box-sizing: border-box;
+                color: #4485c9;
+                box-shadow: inset 0px 0px 0px 2px #4485c9;
+            }
+        }
+    }
+    &__link {
+        display: block;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        border-radius: 100%;
+        vertical-align: top;
+        &:hover, &:focus {
+            text-decoration: none;
+        }
+    }
+    &__image {
+        display: inline-block;
+        width: 100%;
+        img {
+            width: 100%;
+            border-radius: 50%;
+            float: left;
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<div class="evc-selector" [attr.id]="nameSelector + '-component'">
+  <div class="evc-selector__header" [class.evc-selector__header--active]="active" (click)="toggle($event)">
+      <button type="button" class="evc-selector__header-button" [attr.id]="nameSelector + '-button'" role="combobox" aria-autocomplete="list" aria-haspopup="true" [attr.aria-activedescendant]="nameSelector + '-item-' + selected.id" [attr.aria-labelledby]="nameSelector + '-item-' + selected.id" aria-disabled="false" [attr.aria-expanded]="active">{{selected.text}}</button>
+      <input type="text" class="evc-selector__header-input" tabindex="-1" [attr.id]="nameSelector + '-input'" [(ngModel)]="selected">
+      <span [ngClass]="active ? icons.active : icons.inActive" class="evc-selector__header-icon"></span>
+  </div>
+  <evc-dropdown [active]="active" [animation]="false" class="evc-selector__dropdown">
+    <ul class="evc-selector__list" role="listbox" [attr.id]="nameSelector + '-list'" [attr.aria-labelledby]="nameSelector + '-button'" [attr.aria-activedescendant]="nameSelector + '-item-' + selected.id" aria-disabled="false">
+      <li class="evc-selector__list-item" *ngFor="let item of model" [attr.id]="nameSelector + '-item-' + item.id">
+        <a href="#" [attr.title]="'Seleccionar ' + item.text" class="evc-selector__list-link" (click)="selectOption($event, item)">{{item.text}}</a>
+      </li>
+    </ul>
+  </evc-dropdown>
+</div>

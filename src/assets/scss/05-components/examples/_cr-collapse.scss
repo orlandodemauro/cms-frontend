@@ -1,0 +1,67 @@
+///*----------------------------------------------
+//   # cr__collapse
+//------------------------------------------------*/
+
+.#{$wf__ns}collapse {
+	.evc-collapse {
+		display: block;
+		border-radius: 5px;
+		overflow: hidden;
+		&__toggle {
+			position: relative;
+			background: color(primary);
+			button {
+				background: transparent;
+				border: 0;
+				color: color(white-1);
+				cursor: pointer;
+				width: 100%;
+				padding: rem(12) rem(12);
+				text-align: left;
+				font-weight: 600;
+				&:focus {
+					outline: none;
+				}
+			}
+			&:after {
+				content:'\f106';
+				font-family: FontAwesome;
+				position: absolute;
+				top: rem(8);
+				right: rem(12);
+				font-weight: 600;
+				color: color(white-1);
+				cursor: pointer;
+			}
+		}
+
+		&__container {
+			color: color(black-1);
+			background: color(secondary);
+			p {
+				background: transparent;
+				border: 0;
+				color: color(white-1);
+				cursor: pointer;
+				width: 100%;
+				padding: rem(12) rem(12);
+				text-align: left;
+				margin-bottom: 0;
+			}
+		}
+		&--collapse {
+			.evc-collapse__toggle {
+				&:after {
+					content:'\f107';
+				}
+			}
+		}
+		&--collapsed {
+			.evc-collapse__toggle {
+				&:after {
+					content:'\f107';
+				}
+			}
+		}
+	}
+}

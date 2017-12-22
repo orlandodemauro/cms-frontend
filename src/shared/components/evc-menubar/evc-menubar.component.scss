@@ -1,0 +1,22 @@
+.evc-menubar{
+	&__list{
+		width:100%;
+		display: block;
+		&--vertical{
+			.evc-menubar{
+				&__item{
+					padding:10px;
+					display: block;
+				}
+			}
+		}
+		&--horizontal{
+			.evc-menubar{
+				&__item{
+					padding:10px;
+					display: inline-block;
+				}
+			}
+		}
+	}
+}

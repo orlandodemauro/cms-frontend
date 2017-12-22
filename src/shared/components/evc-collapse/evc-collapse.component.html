@@ -1,0 +1,8 @@
+<div class="evc-collapse" [class.evc-collapse--collapse]="!active" [class.evc-collapse--collapsed]="collapsed">
+    <div class="evc-collapse__toggle" (click)="toggleActived()">
+        <ng-content select="[toggleButton]"></ng-content>
+    </div>
+    <div class="evc-collapse__container" [@panelContent]="active ? 'hidden' : 'visible'" (@panelContent.done)="toggleDone($event)">
+        <ng-content select="[container]"></ng-content>
+    </div>
+</div>

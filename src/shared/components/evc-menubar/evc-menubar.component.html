@@ -1,0 +1,9 @@
+<div class="evc-menubar">
+  <ul class="evc-menubar__list" [class.evc-menubar__list--vertical]="orientation=='vertical'" [class.evc-menubar__list--horizontal]="orientation=='horizontal'">
+    <li class="evc-menubar__item" *ngFor="let item of data">
+      <a href="{{item.url}}" class="evc-menubar__link" title="Enlace">
+        <span class="{{item.icon}} evc-menubar__icon" *ngIf="item.icon?.length > 0"></span>
+        {{item.title}}</a>
+    </li>
+  </ul>
+</div>

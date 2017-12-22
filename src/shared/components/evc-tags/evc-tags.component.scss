@@ -1,0 +1,15 @@
+.evc-tags {
+    margin: 0;
+    &__item {
+        display: inline-block;
+        list-style: none;
+        vertical-align: middle;
+        margin-right: 0.625rem;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        display: block;
+    }
+}

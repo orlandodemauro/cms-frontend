@@ -1,0 +1,21 @@
+.evc-layout-card{
+	position: relative;
+	&__header{
+		display: block;
+		width:100%;
+	}
+	&__title, &__icon{
+		display:inline-block;
+	}
+	&__container{
+		font-size: 1rem;
+		background: #ffffff;
+		min-height: 300px;
+	}
+	&__bottom{
+		position: absolute;
+		bottom:0;
+		width:100%;
+		z-index: 99;
+	}
+}

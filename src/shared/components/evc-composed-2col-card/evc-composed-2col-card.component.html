@@ -1,0 +1,48 @@
+<!-- VERTICAL -->
+
+<div class="evc-composed" *ngIf="orientation === 'vertical'">
+	<div class="evc-card" *ngFor="let item of data">
+		<evc-collapse [active]="false">
+			<div class="evc-card__block" toggleButton>
+				<div class="evc-card__side">
+					<figure class="evc-card__figure" *ngIf="item.image?.length > 0">
+						<img src="{{item.image}}" alt="Card image" class="evc-card__image" />
+					</figure>
+					<div class="evc-card__date" *ngIf="item.date?.length > 0">
+						<span class="evc-card__txt evc-card__txt--date">{{item.date}}</span>
+					</div>
+				</div>
+				<div class="evc-card__side">
+					<p class="evc-card__txt evc-card__txt--bold">{{item.title}}</p>
+					<p class="evc-card__txt">{{item.description}}</p>
+				</div>
+			</div>
+			<div class="evc-card__content" container>
+				<evc-card-info [data]="item.list"></evc-card-info>
+			</div>
+		</evc-collapse>
+	</div>
+</div>
+
+
+<div class="evc-composed evc-composed--horizontal" *ngIf="orientation === 'horizontal'">
+	<div class="evc-card" *ngFor="let item of data">
+		<div class="evc-card__block">
+			<div class="evc-card__side">
+				<figure class="evc-card__figure" *ngIf="item.image?.length > 0">
+					<img src="{{item.image}}" alt="Card image" class="evc-card__image" />
+				</figure>
+				<div class="evc-card__date" *ngIf="item.date?.length > 0">
+					<span class="evc-card__txt evc-card__txt--date">{{item.date}}</span>
+				</div>
+			</div>
+			<div class="evc-card__side">
+				<p class="evc-card__txt evc-card__txt--bold">{{item.title}}</p>
+				<p class="evc-card__txt">{{item.description}}</p>
+			</div>
+		</div>
+		<div class="evc-card__content">
+			<evc-card-info [data]="item.list"></evc-card-info>
+		</div>
+	</div>
+</div>

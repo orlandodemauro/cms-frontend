@@ -1,0 +1,52 @@
+
+.#{$wf__ns}layout-card {
+	.evc-layout-card{
+		font-size: 0;
+		box-shadow: 0 3px 3px rgba(0,0,0,0.16), 0 3px 3px rgba(0,0,0,0.23);
+		position: relative;
+		&__header{
+			display: block;
+			width:100%;
+			background:color(primary);
+			padding:20px 15px 20px;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+		&__title{
+			font-size: 1rem;
+			display: inline-block;
+			font-weight: 600;
+			color:color(white-1);
+			text-transform: uppercase;
+		}
+		&__icon{
+			font-size: 1rem;
+			padding-right: 10px;
+			display:inline-block;
+			color:color(white-1);
+		}
+		&__container{
+			background: color(white-1);
+			min-height: 300px;
+		}
+		&__bottom{
+			position: absolute;
+			bottom:0;
+			width:100%;
+			z-index: 99;
+			background:color(white-1);
+		}
+		&__link{
+			font-size: 1rem;
+			display: block;
+			text-align: center;
+			padding:10px;
+			border-top: 1px solid color(grey-1);
+			color:color(primary);
+		}
+		li{
+			font-size: 1rem;
+			list-style: none;
+		}
+	}
+}

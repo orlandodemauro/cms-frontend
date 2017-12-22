@@ -1,0 +1,8 @@
+<div class="evc-search">
+  <input type="text" id="search-input" class="evc-search__input" [(ngModel)]="search" (ngModelChange)="changeValue($event)" placeholder="{{defaultText}}">
+  <label for="search-input" class="evc-search__label">
+    <button (click)="btnSend()" type="button" class="evc-search__link">
+      <span class="evc-search__icon" aria-hidden="true" [ngClass]="iconClass"></span>
+    </button>
+  </label>
+</div>

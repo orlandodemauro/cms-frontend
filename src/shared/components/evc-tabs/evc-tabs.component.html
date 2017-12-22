@@ -1,0 +1,16 @@
+
+<div class="evc-tabs" [ngClass]="'evc-tabs--' + orientation">
+    <ul class="evc-tabs__header" *ngIf="(orientation==='horizontal-top' || orientation==='vertical-left')">
+        <li class="evc-tabs__item" *ngFor="let panel of panels" role="presentation" [class.evc-tabs__item--selected]="panel.selected">
+            <a href="#" title="{{panel.descriptionLabel}}" class="evc-tabs__link" (click)="selectTab($event,panel)" role="tab" [attr.id]="'header-' + panel.id" [attr.aria-selected]="panel.selected" [attr.aria-controls]="panel.id">{{panel.title}}</a>
+        </li>
+    </ul>    
+    <div class="evc-tabs__content">
+        <ng-content></ng-content>
+    </div>
+    <ul class="evc-tabs__header" *ngIf="(orientation==='horizontal-bottom' || orientation==='vertical-right')">
+        <li class="evc-tabs__item" *ngFor="let panel of panels" role="presentation" [class.evc-tabs__item--selected]="panel.selected">
+            <a href="#" title="{{panel.descriptionLabel}}" class="evc-tabs__link" (click)="selectTab($event,panel)" role="tab" [attr.id]="'header-' + panel.id" [attr.aria-selected]="panel.selected" [attr.aria-controls]="panel.id">{{panel.title}}</a>
+        </li>
+    </ul>
+</div>

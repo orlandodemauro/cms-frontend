@@ -1,0 +1,17 @@
+
+.#{$wf__ns}card {
+	.evc-card{
+		.evc-collapse{
+			cursor: pointer;
+		}
+	}
+	.evc-card {
+		&__date{
+			background:#3a81cc;
+			border-radius: 50%;
+		}
+		&__image{
+			border-radius: 50%;
+		}
+	}
+}

@@ -1,0 +1,40 @@
+///*----------------------------------------------
+//   # cr__dropdown
+//------------------------------------------------*/
+
+.#{$wf__ns}dropdown {
+    position: relative;
+    &__action {
+        background: color(primary);
+        border: 0;
+        padding: rem(4) rem(8);
+        color: color(white-1);
+        border-radius: 4px;
+        cursor: pointer;
+        &--show {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+        &:focus {
+            outline: none;
+        }
+    }
+    &__container {
+        .evc-dropdown {
+            &__content {
+                background: color(white-1);
+                padding: rem(16) rem(16);
+                border: 1px solid color(blue-2);
+                border-top-left-radius: 0;
+                border-top-right-radius: 5px;
+                border-bottom-right-radius: 5px;
+                border-bottom-left-radius: 5px;
+            }
+        }
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

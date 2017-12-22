@@ -1,0 +1,91 @@
+///*----------------------------------------------
+//   # cr__menu-list-colum
+//------------------------------------------------*/
+
+.#{$wf__ns}menu-list-column {
+    &__nav {
+        width:100%;
+        position:relative;
+    }
+    &__list{
+        font-size: 0;
+    }
+    &__item {
+        font-size:rem(18);
+        list-style-type: none;
+        &:hover {
+            .#{$wf__ns}menu-list-column{
+                &__link{
+                    color: color(primary);
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    &__link{
+        color:color(link);
+        display: block;
+        background:transparent;
+        border:0;
+        outline:none;
+        position: relative;
+        padding:rem(20);
+        cursor: pointer;
+        text-align: left;
+        width:100%;
+        border-bottom: rem(1) solid #eee;
+        
+        &--dropdown{
+            &:after{
+                content:'\f106';
+                position: absolute;
+                right:rem(20);
+                font-family: FontAwesome;
+            }
+        }
+    }
+    &__subitem{
+        position: relative;
+        display: inline-block;
+        width:50%;
+    }
+    &__sublink{
+        color:color(sublink);
+        display: block;
+        cursor: pointer;
+        text-align: left;
+        width:100%;
+        font-size: rem(15);
+        padding-left:rem(20);
+        padding-top: rem(10);
+        padding-bottom: rem(10);
+        margin-top: rem(10);
+        &--active{
+            color:color(primary);
+            font-weight: 600;
+        }
+    }
+    &__container{
+        box-sizing: border-box;
+        display:block;
+        overflow:hidden;
+    }
+}
+
+// Overwriting components
+
+.evc-collapse {
+    &--collapse {
+        .#{$wf__ns}menu-list-column__link{
+            &--dropdown{
+                &:after{
+                    content:'\f107';
+                    position: absolute;
+                    right:rem(20);
+                    font-family: FontAwesome;
+                }
+            }
+        }
+    }
+}

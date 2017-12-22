@@ -1,0 +1,51 @@
+///*----------------------------------------------
+//   # cr__welcome
+//------------------------------------------------*/
+
+.#{$wf__ns}welcome {
+    .evc-welcome {
+        &__background {
+            img {
+            }
+        }
+        &__content-title {
+        }
+        &__title {
+            font-size: rem(18);
+            font-weight: bold;
+            color: color(white-1);
+        }
+        &__info {
+        }
+        &__localization {
+            width: calc(100% - 100px);
+            font-size: rem(16);
+            padding-right: rem(12);
+            color: color(white-1);
+        }
+        &__date {
+            font-size: rem(16);
+            font-weight: 600;
+        }
+        &__city {
+            font-size: rem(14);
+            font-weight: 600;
+        }
+        &__meteo {
+            width: rem(80);
+            font-size: rem(16);
+        }
+        &__icon-weather {
+            font-size: rem(18);
+            color: color(yellow-1);
+        }
+        &__weather {
+            width: calc(100% - 25px);
+            font-size: rem(16);
+            font-weight: 600;
+            line-height: 18px;
+            margin-top: rem(-4);
+            color: color(white-1);
+        }
+    }
+}

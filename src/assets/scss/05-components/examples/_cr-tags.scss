@@ -1,0 +1,18 @@
+///*----------------------------------------------
+//   # cr__tags
+//------------------------------------------------*/
+
+.#{$wf__ns}tags {
+    .evc-tags {
+        &__item {
+            
+        }
+        &__link {
+            border: 2px solid color(grey-1);
+            border-radius: 3px;
+            padding: rem(3) rem(6);
+            color: color(text-1);
+            font-weight: 600;
+        }
+    }
+}

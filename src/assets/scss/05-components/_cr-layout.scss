@@ -1,0 +1,27 @@
+///*----------------------------------------------
+//   # cr__layout
+//------------------------------------------------*/
+
+.#{$wf__ns}layout {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding-top: rem(72);
+    table-layout: fixed;
+    &__main {
+        display: table-cell;
+        width: 80%;
+        height: 100%;
+        vertical-align: top;
+        padding: rem(20) 1.5%;
+    }
+    &__aside {
+        background:color(white-1);
+        max-width: 100%;
+        height: 100%;
+        display: table-cell;
+        position: relative;
+        width: 20%;
+        vertical-align: top;
+    }
+}

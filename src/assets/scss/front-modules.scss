@@ -1,0 +1,119 @@
+///*-------------------------------------------------------------------------
+//   # FRONT MODULES CONFIG
+//--------------------------------------------------------------------------*/
+
+//	CONTENT THIS FILE:
+//		# IMPORT FILE CONFIG SCSS
+//      # SETTINGS
+//		# TOOLS
+//      # GENERIC
+//		# BASE
+//		# OBJETCS
+//      # COMPONENTS
+//      # TRUMPS
+
+
+
+///*--------------------------------------------------------
+//    # IMPORT FILE CONFIG SCSS
+//----------------------------------------------------------*/
+@import '_config__project';
+
+
+///*--------------------------------------------------------
+//    # SETTINGS
+//----------------------------------------------------------*/
+@import '00-settings/_settings__colors';
+@import '00-settings/_settings__grid';
+@import '00-settings/_settings__responsive';
+@import '00-settings/_settings__z-index';
+
+
+
+///*----------------------------------------------------------
+//    # TOOLS
+//----------------------------------------------------------*/
+@import '01-tools/_tools__colors';
+@import '01-tools/_tools__fonts';
+@import '01-tools/_tools__percentaje';
+@import '01-tools/_tools__pixel-to-em';
+@import '01-tools/_tools__pixel-to-rem';
+@import '01-tools/_tools__responsive';
+@import '01-tools/_tools__z-index';
+
+
+
+// /*----------------------------------------------------------
+//     # GENERIC
+// ----------------------------------------------------------*/
+@import "02-generic/_generic__accessible";
+@import "02-generic/_generic__box-sizing";
+@import "02-generic/_generic__clearfix";
+@import "02-generic/_generic__fonts";
+@import "02-generic/_generic__reset";
+@import "font-awesome";
+@import "front-prismjs";
+
+
+// /*----------------------------------------------------------
+//     # BASE
+// ----------------------------------------------------------*/
+@import '03-elements/_elements__body';
+@import '03-elements/_elements__headings';
+@import '03-elements/_elements__html';
+@import '03-elements/_elements__image';
+@import '03-elements/_elements__lists';
+
+
+
+// /*----------------------------------------------------------
+//     # OBJETCS
+// ----------------------------------------------------------*/
+@import '04-objects/_objects__avatar';
+@import '04-objects/_objects__debug';
+@import '04-objects/_objects__layout';
+@import '04-objects/_objects__list';
+@import '04-objects/_objects__nora';
+@import '04-objects/_objects__unit';
+@import '04-objects/_objects__wrapper';
+
+
+
+// /*----------------------------------------------------------
+//     # COMPONENTS
+// ----------------------------------------------------------*/
+@import '05-components/_cr-header';
+@import '05-components/_cr-layout';
+@import '05-components/_cr-menu-list-colum';
+@import '05-components/_cr-markdown';
+
+    // /*----------------------------------------------------------
+    //     # COMPONENTS - EXAMPLE
+    // ----------------------------------------------------------*/
+    @import '05-components/examples/_cr-collapse';
+    @import '05-components/examples/_cr-search';
+    @import '05-components/examples/_cr-menubar';
+    @import '05-components/examples/_cr-tabs';
+    @import '05-components/examples/_cr-dropdown';
+    @import '05-components/examples/_cr-selector';
+    @import '05-components/examples/_cr-2col-card';
+    @import '05-components/examples/_cr-2col-composed-card';
+    @import '05-components/examples/_cr-welcome';
+    @import '05-components/examples/_cr-card-info';
+    @import '05-components/examples/_cr-card';
+    @import '05-components/examples/_cr-tags';
+    @import '05-components/examples/_cr-card-list';
+
+
+
+// /*----------------------------------------------------------
+//     # TRUMPS
+// ----------------------------------------------------------*/
+@import '06-trumps/_trumps__float';
+@import '06-trumps/_trumps__font-size';
+@import '06-trumps/_trumps__hide';
+@import '06-trumps/_trumps__margin';
+@import '06-trumps/_trumps__padding';
+@import '06-trumps/_trumps__position';
+@import '06-trumps/_trumps__text-align';
+@import '06-trumps/_trumps__text-transform';

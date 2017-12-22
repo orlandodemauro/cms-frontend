@@ -1,0 +1,27 @@
+///*----------------------------------------------
+//   # cr__menubar
+//------------------------------------------------*/
+
+ .#{$wf__ns}menubar {
+	.evc-menubar {
+		background:color(primary);
+		&__link{
+			color:color(white-1);
+			display: inline-block;
+			height: inherit;
+			font-size: 16px;
+			font-weight: 600;
+			vertical-align: middle;
+			&:hover{
+				text-decoration: none;
+			}
+		}
+		&__icon{
+			padding-right: 15px;
+			font-size: 25px;
+			vertical-align: middle;
+			height: inherit;
+			display: inline-block;
+		}
+	}
+}

@@ -1,0 +1,5 @@
+<div class="evc-dropdown" [ngClass]="{'evc-dropdown--active': active}" [@panelLeave]="animation ? (active ? 'visible' : 'hidden') : (active ? 'visible-no-animate' : 'hidden-no-animate')" (@panelLeave.done)="toggleDone($event)" [attr.aria-hidden]="!active" [attr.aria-expanded]="active">
+    <div class="evc-dropdown__content">
+        <ng-content></ng-content>
+    </div>
+</div>

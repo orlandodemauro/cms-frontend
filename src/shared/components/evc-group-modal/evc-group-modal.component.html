@@ -1,0 +1,12 @@
+<ul class="evc-group-modal" [ngClass]="styleClass">
+  <li class="evc-group-modal__item" *ngFor="let item of items">
+    <a [attr.href]="item.link" [attr.title]="item.title" class="evc-group-modal__link">
+      <figure class="evc-group-modal__image">
+          <img [attr.src]="item.imageURL" [attr.alt]="item.altImage"/>
+      </figure>
+    </a>
+  </li>
+  <li *ngIf="maxIndicator" class="evc-group-modal__item evc-group-modal__item--max-items">
+    <a href="#" [attr.title]="'Ver ' +  remaining.length + ' mas'" class="evc-group-modal__link" [innerHTML]="'+ ' + remaining.length"></a>
+  </li>
+</ul>

@@ -8,13 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { routing } from './app.routing';
 
-import { DashboardModule } from './dashboard/dashboard.module';
+import { HomeModule } from './home/home.module';
 import { SharedModule } from '../shared/shared.module';
 
+import { crHeaderComponent } from './cr-header/cr-header.component';
 
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [
+    AppComponent,
+    crHeaderComponent
+  ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
@@ -23,7 +27,7 @@ import { SharedModule } from '../shared/shared.module';
     FormsModule,
     ReactiveFormsModule,
     routing,
-    DashboardModule,
+    HomeModule,
     SharedModule.forRoot(),
   ],
   providers: [],

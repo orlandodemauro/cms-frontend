@@ -1,0 +1,35 @@
+
+.#{$wf__ns}card-list {
+	display: block;
+	.evc-card-list{
+		&__header{
+			display: block;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			border-bottom: 2px solid color(primary);
+		}
+		&__block{
+			vertical-align: middle;
+			&--to-right{
+				text-align: right;
+				display: block;
+			}
+			&--to-left{
+				text-align: left;
+				display: block;
+			}
+		}
+		&__container{
+			padding-top:10px;
+			padding-bottom: 10px;
+			font-size: 0;
+		}
+		&__txt{
+			color:color(grey-2);
+			margin:0;
+			&--small{
+				font-size: .9rem !important;
+			}
+		}
+	}
+}

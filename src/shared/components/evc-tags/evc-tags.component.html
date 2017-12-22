@@ -1,0 +1,5 @@
+<ul class="evc-tags">
+  <li class="evc-tags__item" *ngFor="let item of model">
+    <a class="evc-tags__link" [attr.href]="item.link" [attr.title]="item.title" [innerHTML]="item.label"></a>
+  </li>
+</ul>

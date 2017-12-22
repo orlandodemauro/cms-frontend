@@ -1,0 +1,84 @@
+///*----------------------------------------------
+//   # cr__selector
+//------------------------------------------------*/
+
+.#{$wf__ns}selector {
+    .evc-selector {
+        display: inline-block;
+        max-width: rem(250);
+        vertical-align: middle;
+        margin: 0;
+        &__header {
+            height: rem(25);
+            &--active{
+                .evc-selector__header-button {
+                    border-bottom-right-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+            }
+        }
+        &__header-button {
+            background: color(primary);
+            border: 0;
+            cursor: pointer;
+            border: 1px solid color(secondary);
+            padding-left: rem(5);
+            color: color(white-1);
+            border-radius: 3px;
+        }
+        &__header-input {
+            
+        }
+        &__header-icon {
+            color: color(white-1);
+        }
+        &__dropdown {
+            .evc-dropdown {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+        &__list {
+            display: block;
+            box-sizing: border-box;
+            width: 100%;
+            background: color(white-1);
+            border: 1px solid color(primary);
+            border-bottom-right-radius: 3px;
+            border-bottom-left-radius: 3px;
+            margin-left: 0;
+        }
+        &__list-item {
+            display: block;
+            box-sizing: border-box;
+        }
+        &__list-link {
+            display: block;
+            padding-left: rem(5);
+            padding-right: rem(5);
+            color: color(text-1);
+            box-sizing: border-box;
+            &:hover, &:focus {
+                text-decoration: none;
+                background: color(primary, 0.5);
+            }
+        }
+    }
+    &__button {
+        height: rem(25);
+        background: color(secondary);
+        border: 0;
+        display: inline-block;
+        padding: 0 rem(10);
+        vertical-align: middle;
+        border-radius: 3px;
+        margin-left: rem(6);
+        font-size: rem(13);
+        font-weight: 600;
+        cursor: pointer;
+        color: color(white-1);
+        &:hover, &:focus {
+            background: color(secondary, 0.8);
+        }
+    }
+}
