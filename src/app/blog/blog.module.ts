@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { routing } from './home.routing';
+import { routing } from './blog.routing';
 
-import { HomeComponent } from './home.component';
+import { BlogComponent } from './blog.component';
 
 @NgModule({
   imports: [
@@ -11,6 +11,6 @@ import { HomeComponent } from './home.component';
     FormsModule,
     routing
   ],
-  declarations: [HomeComponent]
+  declarations: [BlogComponent]
 })
-export class HomeModule { }
+export class BlogModule { }
