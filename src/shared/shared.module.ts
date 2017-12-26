@@ -21,10 +21,16 @@ import { EvcCardListModule } from "./components/evc-card-list/evc-card-list.modu
 import { EvcDocumentModule } from './components/evc-document/evc-document.module';
 
 // Providers
+import { UtilsService } from './services/utils.service';
+import { BlogService } from './services/blog.service';
+import { PostService } from './services/post.service';
+
 
 
 export const providers = [
-
+  UtilsService,
+  BlogService,
+  PostService
 ];
 
 @NgModule({

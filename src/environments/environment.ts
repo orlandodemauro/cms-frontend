@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  base_url: 'http://localhost:3000' // change to connect to dev server
+  base_url: 'http://localhost:3000'
 };

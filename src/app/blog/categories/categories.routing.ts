@@ -8,6 +8,10 @@ export const routes: Routes = [
   {
     path: ':category',
     component: CategoriesComponent
+  },
+  {
+    path: '',
+    component: CategoriesComponent
   }
 ];
 
