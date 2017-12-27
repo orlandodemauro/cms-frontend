@@ -18,7 +18,7 @@ export class PostListComponent implements OnInit {
     private router: Router,
   ) { }
 
-  posts: Post[] = [];
+  posts: Post[];
 
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: Params) => {
@@ -29,7 +29,7 @@ export class PostListComponent implements OnInit {
       }
       
       callback.then(posts => {
-        this.posts = posts.data.results as Post[];
+        this.posts = posts;
         console.log(posts);
       });
 

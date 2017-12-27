@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 
 import { UtilsService } from './utils.service';
 
+import { Post } from '../interfaces/post';
+
 import 'rxjs/add/operator/toPromise';
 import { HttpClient } from '@angular/common/http';
 
@@ -15,21 +17,21 @@ constructor(
 
   }
 
-  getPost(title: string): Promise<any> {
+  getPost(title: string): Promise<Post> {
     return this.http.get(
                  this.utils.get_url(`blog/post/${title}`),
                )
                .toPromise()
-               .then(response => response)
+               .then((response:any) => response.data.results as Post)
                .catch(this.utils.handleError);
   }
 
-  getPosts(): Promise<any> {
+  getPosts(): Promise<Post[]> {
     return this.http.get(
                  this.utils.get_url(`blog/post`),
                )
                .toPromise()
-               .then(response => response)
+               .then((response:any) => response.data.results as Post[])
                .catch(this.utils.handleError);
   }
 }
