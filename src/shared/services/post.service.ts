@@ -26,12 +26,4 @@ constructor(
                .catch(this.utils.handleError);
   }
 
-  getPosts(): Promise<Post[]> {
-    return this.http.get(
-                 this.utils.get_url(`blog/post`),
-               )
-               .toPromise()
-               .then((response:any) => response.data.results as Post[])
-               .catch(this.utils.handleError);
-  }
 }

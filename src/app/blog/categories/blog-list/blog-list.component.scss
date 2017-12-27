@@ -1,0 +1,39 @@
+.cr-list-item {
+    cursor: pointer;
+    min-height: 30px;
+    justify-content: space-between;
+    &.selected {
+        background: #436554;
+        .blog-count {
+            background: white;
+            color: #436554;
+        }
+        & .evc-blog {
+            &__txt{
+                color: white;
+            }
+        }
+    }
+    .evc-blog{
+        display: flex;
+        width: 100%;
+        &__txt{
+            font-size: 1rem;
+            &--bold{
+                font-weight: 600;
+            }
+        }
+    }
+    .blog-count {
+        font-size: 1rem;
+        font-weight: 600;
+        background: gray;
+        color: white;
+        border-radius: 100%;
+        width: 20px;
+        height: 20px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+}

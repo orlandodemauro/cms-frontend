@@ -13,14 +13,18 @@ export class PostItemComponent implements OnInit {
   post: Post = {
     title: "",
 	  state: "",
-	  author: "",
+	  author: {
+      name: {
+        first: ""
+      }
+    },
 	  publishedDate: null,
 	  image: {},
 	  content: {
 		  brief: "",
 		  extended: "",
 	  },
-	  categories: "",
+	  categories: [],
 };
 
   @Output()
@@ -30,7 +34,6 @@ export class PostItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.post)
   }
 
   selectpost() {

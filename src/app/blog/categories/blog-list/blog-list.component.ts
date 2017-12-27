@@ -2,18 +2,17 @@ import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute, Params, Router} from '@angular/router';
 import { BlogService } from '../../../../shared/services/blog.service';
 import { PostService } from '../../../../shared/services/post.service';
-import { Post } from '../../../interfaces/post';
 
 @Component({
-  selector: 'post-list',
-  templateUrl: './post-list.component.html',
-  styleUrls: ['./post-list.component.scss']
+  selector: 'blog-list',
+  templateUrl: './blog-list.component.html',
+  styleUrls: ['./blog-list.component.scss']
 })
-export class PostListComponent implements OnInit {
-  
-  posts: Post[];
+export class BlogListComponent implements OnInit {
 
-  constructor(
+  blogs: Object[];
+  selected: string;
+  constructor(    
     private blogService: BlogService,
     private postService: PostService,
     private activatedRoute: ActivatedRoute,
@@ -21,20 +20,16 @@ export class PostListComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    this.blogService.getBlogList().then(blogs => {
+      this.blogs = blogs;
+      console.log(blogs)
+    });
     this.activatedRoute.params.subscribe((params: Params) => {
-      this.blogService.getPostsByBlog(params["category"]).then(posts => {
-        this.posts = posts;
-      });
-
+      this.selected = params["category"];
     });
   }
 
-  onPostSelected(post: string) {
-    if (!post) {
-      console.error('Empty Post');
-      return;
-    }
-    this.router.navigate([`blog/post/${post}`]);
+  select(category: string = ""): void {
+    this.router.navigate([`blog/${category}`]);
   }
-
 }

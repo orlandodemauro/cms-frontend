@@ -1,0 +1,13 @@
+<ul>
+  <li (click)="select()">
+      <div [ngClass]="'cr-list-item' + (!selected ? ' selected' : '')">
+        <span class="blog-name evc-blog__txt evc-blog__txt--bold">All</span>
+      </div>
+  </li>
+  <li *ngFor="let blog of blogs" (click)="select(blog.key)">
+      <div [ngClass]="'cr-list-item' + (selected === blog.key ? ' selected' : '')">
+        <span class="blog-name evc-blog__txt evc-blog__txt--bold">{{blog.name}}</span>
+        <div *ngIf="blog.postCount" class="blog-count">{{blog.postCount}}</div>
+      </div>
+  </li>
+</ul>

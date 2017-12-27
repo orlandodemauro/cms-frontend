@@ -1,4 +1,5 @@
-<div class="cr-post-item">
+<div class="cr-list-item">
+  <img class="evc-post-img"src={{post.image}} />
   <div class="evc-post">
     <div class="evc-post__header">
       <div class="evc-post__block">
@@ -7,7 +8,7 @@
     </div>
     <div class="evc-post__container">
       <div class="evc-post__block evc-post__block--to-left">
-        <p class="evc-post__txt">{{post.publishedDate}}</p>
+        <p class="evc-post__txt">{{post.publishedDate}} by {{post.author.name.first}}</p>
         <span class="evc-post__txt evc-post__txt--bold">{{post.content.brief}}</span>
       </div>
     </div>

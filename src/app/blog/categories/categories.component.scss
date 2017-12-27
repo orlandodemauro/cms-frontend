@@ -1,0 +1,35 @@
+@import '../../../assets/scss/01-tools/_tools__colors';
+@import '../../../assets/scss/00-settings/_settings__colors';
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .header {
+        height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 10px 20px 20px 10px;
+        margin: 10px;
+        border-bottom: 1px solid color(primary);
+        & >* {
+            font-weight: 500;
+            color: color(grey-2);
+        }
+    }
+    .content {
+        display: flex;
+    }
+    .post-list {
+        width: 100%;
+    }
+    .blog-list {
+        min-width: 300px;
+        max-width: 300px;
+        margin-left: 30px;
+        .list-header {
+            margin: 20px 0px 30px 10px;
+            font-weight: 500;
+            color: color(grey-2);
+        }
+    }
+}
