@@ -20,5 +20,12 @@
 			text-align: right;
 			display: block;
 		}
-    }
+	}
+	.title{
+		display: inline-block;
+		cursor: pointer;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
 }

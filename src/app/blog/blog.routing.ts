@@ -7,6 +7,7 @@ export const routes: Routes = [
     path: '',
     component: BlogComponent,
     children: [
+      { path: 'post/:post', loadChildren: 'app/blog/post/post.module#PostModule'},
       { path: '', loadChildren: 'app/blog/categories/categories.module#CategoriesModule'}
     ]
   }

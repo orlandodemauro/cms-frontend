@@ -23,7 +23,7 @@ export class PostListComponent implements OnInit {
   ngOnInit() {
     this.activatedRoute.params.subscribe((params: Params) => {
       this.blogService.getPostsByBlog(params["category"]).then(posts => {
-        this.posts = posts;
+        this.posts = posts as Post[];
       });
 
     });
