@@ -1,3 +1,15 @@
-<p>
-  post works!
-</p>
+<div class="container">
+  <div>
+    <div class="container-header" (click)="backToBlog($event)">
+        ← back to the blog
+    </div>
+    <div class="content">
+        <div class="header">
+          <h1>{{post.title}}</h1>
+        </div>
+        <img class="post-img"src={{post.image}} />
+        Posted on {{post.publishedDate}} by {{post.author.name.first}}
+        <div class="extended">{{post.content.extended}}</div>  
+    </div>
+  </div>
+</div> 

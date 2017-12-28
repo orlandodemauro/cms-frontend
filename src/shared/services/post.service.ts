@@ -22,7 +22,7 @@ constructor(
                  this.utils.get_url(`blog/post/${title}`),
                )
                .toPromise()
-               .then((response:any) => response.data.results as Post)
+               .then((response:any) => response.data as Post)
                .catch(this.utils.handleError);
   }
 

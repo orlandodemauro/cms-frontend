@@ -38,6 +38,6 @@ export class PostItemComponent implements OnInit {
   }
 
   selectPost() {
-    this.postSelected.emit(this.post['_id']);
+    this.postSelected.emit(this.post['slug']);
   }
 }
