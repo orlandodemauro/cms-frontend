@@ -38,7 +38,6 @@ export class PostComponent implements OnInit {
     this.activatedRoute.params.subscribe((params: Params) => {
       this.postService.getPost(params['post']).then(post => {
         this.post = post as Post;
-        console.log(post)
       });
 
     });

@@ -22,7 +22,6 @@ export class BlogListComponent implements OnInit {
   ngOnInit() {
     this.blogService.getBlogList().then(blogs => {
       this.blogs = blogs;
-      console.log(blogs)
     });
     this.activatedRoute.params.subscribe((params: Params) => {
       this.selected = params["category"];

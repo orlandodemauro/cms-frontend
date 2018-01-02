@@ -34,7 +34,6 @@ export class PostItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log(this.post);
   }
 
   selectPost() {
